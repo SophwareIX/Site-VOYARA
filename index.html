@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyara - Agência de Viagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegação -->
+    <nav>
+        <div class="logo">
+            <img src="VOYARA.png" alt="Logo Voyara" width="120">
+        </div>
+        <ul>
+            <li><span class="moeda">REAL - R$</span></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#passagens">Passagens</a></li>
+            <li><a href="#comprar">Comprar</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore o mundo com glamour!</h1>
+            <p>Destinos deslumbrantes esperam por você.</p>
+        </div>
+    </section>
+
+    <!-- Início -->
+    <section id="inicio">
+        <h1>Bem-vindo à Voyara!</h1>
+        <p>Somos a sua agência de viagens especializada em proporcionar experiências inesquecíveis.</p>
+    </section>
+
+    <hr>
+
+    <!-- Passagens -->
+    <section id="passagens" class="destinos">
+        <h1>Destinos mais procurados</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="IMG/Paris.jpeg" alt="Paris">
+                <h2>Paris</h2>
+                <p>Amor, luzes e muito estilo.</p>
+                <strong>Preço: R$ 5.000,00</strong>
+            </div>
+            <div class="card">
+                <img src="IMG/Maldivas.jpeg" alt="Maldivas">
+                <h2>Maldivas</h2>
+                <p>Luxo e tranquilidade sobre as águas.</p>
+                <strong>Preço: R$ 7.500,00</strong>
+            </div>
+            <div class="card">
+                <img src="IMG/Nova York.jpeg" alt="Nova York">
+                <h2>Nova York</h2>
+                <p>A cidade que nunca dorme... nem perde o glamour.</p>
+                <strong>Preço: R$ 6.000,00</strong>
+            </div>
+            <div class="card">
+                <img src="IMG/Toquio.jpeg" alt="Tóquio">
+                <h2>Tóquio</h2>
+                <p>Tecnologia e tradição lado a lado.</p>
+                <strong>Preço: R$ 6.800,00</strong>
+              </div>
+              <div class="card">
+                <img src="IMG/Roma.jpeg" alt="Roma">
+                <h2>Roma</h2>
+                <p>História e charme italiano.</p>
+                <strong>Preço: R$ 5.200,00</strong>
+              </div>
+              <div class="card">
+                <img src="IMG/Dubai.jpg" alt="Dubai">
+                <h2>Dubai</h2>
+                <p>Luxo no coração do deserto.</p>
+                <strong>Preço: R$ 9.000,00</strong>
+              </div>
+              <div class="card">
+                <img src="IMG/Fortaleza.jpeg" alt="Dubai">
+                <h2>Fortaleza</h2>
+                <p>História, cultura e modernidade.</p>
+                <strong>Preço: R$ 1.042,00</strong>
+              </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Comprar -->
+    <section id="comprar">
+        <h1>Comprar Passagens</h1>
+        <div class="form-container">
+            <form id="formCompra">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="destino">Destino:</label>
+                <select id="destino" name="destino" required>
+                    <option value="" disabled selected>Escolha um destino</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Maldivas">Maldivas</option>
+                    <option value="Nova York">Nova York</option>
+                    <option value="Tóquio">Tóquio</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Dubai">Dubai</option>
+                </select>
+
+                <label for="ida">Data de Ida:</label>
+                <input type="date" id="ida" name="ida" required>
+
+                <label for="volta">Data de Volta:</label>
+                <input type="date" id="volta" name="volta">
+
+                <label for="passageiros">Número de Passageiros:</label>
+                <input type="number" id="passageiros" name="passageiros" min="1" required>
+
+                <button type="submit" id="btnComprar">Comprar</button>
+            </form>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h1>Contato</h1>
+        <p>Email: contato@voyara.com.br</p>
+        <p>Telefone: (88) 1234-5678</p>
+        <p>Endereço: EEEP JAIME DA CUNHA REBOUÇAS</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Voyara - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
